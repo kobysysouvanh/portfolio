@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home() {
     return (
-        <div className="text-6xl flex pl-20 py-40">
+        <div className="text-6xl flex py-56 justify-center">
             Welcome to my portfolio!
         </div>
     )
