@@ -3,6 +3,17 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
 
-body {
+.app {
     font-family: "Sora";
+}
+
+.blinking-cursor:after {
+    content: '|';
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }

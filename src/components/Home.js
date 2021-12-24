@@ -1,18 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
+import TypeWriterEffect from 'react-typewriter-effect'
 
-const message = 'Welcome to my page'
 
 function Home() {
-    const [typedMessage, setMessage] = useState('')
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            setMessage(message.slice(0, typedMessage.length + 1))
-        }, 100)
-        return () => clearTimeout(timeout)
-    }, [typedMessage])
     return (
         <div className="text-6xl flex py-56 justify-center">
-            <span className="blinking-cursor text-6xl">{typedMessage}</span>
+            <TypeWriterEffect text="Welcome to my page!" typeSpeed={100} hideCursorAfterText={true}/>
         </div>
     )
 }
