@@ -4,7 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 
 function Nav() {
     return (
-        <header className="bg-zinc-900 h-50 sticky top-0">
+        <header className="bg-zinc-900 h-50 sticky top-0 z-10">
             <div className="mx-auto flex pl-20 justify-between text-2xl">
                 <nav className="text-gray-300 flex ">
                     <Link className="cursor-pointer inline-flex py-6 px-3 mr-10 hover:text-white" to="home" smooth={true} duration={1500}>Koby Sysouvanhs' Portfolio</Link>
