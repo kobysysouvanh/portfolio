@@ -8,7 +8,7 @@ function App() {
   return (
     <div id="home">
       <Nav/>
-      <div className="flex flex-col space-y-40 py-40 pl-30 bg-orange-50">
+      <div className="flex flex-col space-y-40 py-40 pl-30 bg-neutral-800 ">
         <Home/>
         <About/>
         <Projects/>
