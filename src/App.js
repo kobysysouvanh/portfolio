@@ -6,7 +6,7 @@ import About from "./components/About"
 
 function App() {
   return (
-    <div id="home">
+    <div id="home" className="">
       <Nav/>
       <div className="flex flex-col space-y-40 py-40 pl-30 bg-neutral-800 ">
         <Home/>
