@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .landingButton {
+    @apply px-6 py-2 uppercase text-xs tracking-widest text-[#909090] border-b-2 border-transparent transition-all hover:border-[#70D0FF]/40 hover:text-[#70D0FF];
+  }
+
+  .contactInput {
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#31BAFE]/40 focus:text-[#31BAFE]/40 hover:border-[#31BAFE]/40 shadow-inner;
+  }
+}
