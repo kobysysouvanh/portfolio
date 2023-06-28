@@ -4,7 +4,15 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function Projects() {
-  const projects = [1, 2, 3, 4, 5];
+  const projects = [
+    {
+      name: "Airbnb Clone",
+      desc: "Airbnb clone created using multiple tech stacks including React, Next.js, Primsa, MongoDB, NextAuth, Tailwind CSS, and more. Key features of this project includes full responsiveness, authentications including credential and google, listing of properties, search bar filtering, booking/reservation system, pricing calculation, and cancellation of reservations. ",
+      img: "/airbnb.png",
+      github: "https://github.com/kobysysouvanh/airbnb-clone",
+      website: "https://airbnb-clone-lemon-zeta.vercel.app/",
+    },
+  ];
 
   return (
     <motion.div
@@ -25,26 +33,36 @@ export default function Projects() {
                 y: -300,
                 opacity: 0,
               }}
+              className="w-70 h-40"
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              src="https://cdn.sanity.io/images/ltuexkre/production/af7ca99b5a796d0698cf9121a4a0795b5022b6be-666x375.png"
+              src={project.img}
               alt=""
             />
 
             <div className="space-y-10 px-0 max-w-6xl md:px-10">
               <h4 className="text-4xl font-semibold text-center">
-                Project {i + 1} of {projects.length} Title
+                {project.name}
               </h4>
 
-              <p className="text-lg text-center md:text-left">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-              </p>
+              <p className="text-lg text-center md:text-left">{project.desc}</p>
+            </div>
+            <div className="space-x-2 flex items-center justify-center">
+              <a
+                href={project.github}
+                target="_blank"
+                className="rounded-full bg-[#31BAFE]/70 flex items-center justify-center w-20 h-12"
+              >
+                Github
+              </a>
+              <a
+                href={project.website}
+                target="_blank"
+                className="rounded-full bg-[#31BAFE]/70 flex items-center justify-center w-20 h-12"
+              >
+                Website
+              </a>
             </div>
           </div>
         ))}
