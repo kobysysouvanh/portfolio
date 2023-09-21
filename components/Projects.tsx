@@ -26,9 +26,9 @@ export default function Projects() {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-[#31BAFE] text-2xl">
         Projects
       </h3>
-      <div className="relative  w-full items-center justify-center">
-        <div className="p-3 flex items-center gap-7">
-          <div className="flex flex-col rounded-xl border border-[#31BAFE]/20 overflow-hidden">
+      <div className="relative w-full h-full flex items-center justify-center z-[10]">
+        <div className="p-3 h-[54vh] flex items-center gap-7">
+          <div className="flex h-full flex-col rounded-xl border border-[#31BAFE]/20 overflow-hidden">
             <div className="bg-white flex items-center justify-center h-full w-full">
               <Image src="/airbnb.png" width={700} height={100} alt="airbnb" />
             </div>
@@ -45,11 +45,11 @@ export default function Projects() {
                 url="https://airbnb-clone-b27181208-kobysysouvanh.vercel.app/"
                 fgColor="white"
                 bgColor="black"
-                target="_blank"
+                target="https://airbnb-clone-b27181208-kobysysouvanh.vercel.app/"
               />
             </div>
           </div>
-          <div className="flex flex-col rounded-xl border border-[#31BAFE]/20 overflow-hidden">
+          <div className="flex h-full flex-col rounded-xl border border-[#31BAFE]/20 overflow-hidden">
             <div className="bg-white flex items-center justify-center h-full w-full">
               <Image
                 src="/pcpalace.png"
@@ -75,10 +75,10 @@ export default function Projects() {
                 target="_blank"
               />
               <SocialIcon
-                url="https://airbnb-clone-b27181208-kobysysouvanh.vercel.app/"
+                url="https://pcpalace.vercel.app/"
                 fgColor="white"
                 bgColor="black"
-                target="_blank"
+                target="https://pcpalace.vercel.app/"
               />
             </div>
           </div>
