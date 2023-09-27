@@ -28,12 +28,14 @@ export default function Projects() {
       </h3>
       <div className="relative w-full h-full flex items-center justify-center z-[10]">
         <div className="p-3 h-[54vh] items-center gap-7 grid grid-cols-3">
-          <div className="flex h-full flex-col rounded-xl border border-[#31BAFE]/20 overflow-hidden">
+          <div className="flex h-full flex-col rounded-xl border border-[#31BAFE]/20 overflow-hidden bg-[#31BAFE]/50">
             <div className="bg-white flex items-center justify-center h-full w-full">
               <Image src="/airbnb.png" width={700} height={100} alt="airbnb" />
             </div>
-            <h3 className="text-2xl font-bold pl-2 pt-2">Airbnb Clone</h3>
-            <div className="p-2">{projects[0].desc}</div>
+            <div className="h-96">
+              <h3 className="text-2xl font-bold pl-2 pt-2">Airbnb Clone</h3>
+              <div className="p-2">{projects[0].desc}</div>
+            </div>
             <div className="w-full flex gap-2 py-2 justify-center items-center">
               <SocialIcon
                 url="https://github.com/kobysysouvanh/airbnb-clone"
@@ -49,18 +51,20 @@ export default function Projects() {
               />
             </div>
           </div>
-          <div className="flex h-full flex-col rounded-xl border border-[#31BAFE]/20 overflow-hidden">
+          <div className="flex h-full flex-col rounded-xl border border-[#31BAFE]/20 overflow-hidden bg-[#31BAFE]/50">
             <div className="bg-white flex items-center justify-center h-full w-full">
               <Image src="/pcpalace.png" width={700} height={100} alt="logo" />
             </div>
-            <h3 className="text-2xl font-bold pl-2 pt-2">PC Palace</h3>
-            <div className="p-2">
-              Created using Next.js, Prisma, Planetscale, Tailwind CSS. A basic
-              e-commerce website where users can buy and sell products. Comes
-              with a fully functioning shopping cart and checkout is completed
-              using Stripe. Products can be individually viewed to show more
-              information about the product. Admins can add/remove/edit products
-              for buyers to view. Deployed on Vercel.
+            <div className="h-96">
+              <h3 className="text-2xl font-bold pl-2 pt-2">PC Palace</h3>
+              <div className="p-2">
+                Created using Next.js, Prisma, Planetscale, Tailwind CSS. A
+                basic e-commerce website where users can buy and sell products.
+                Comes with a fully functioning shopping cart and checkout is
+                completed using Stripe. Products can be individually viewed to
+                show more information about the product. Admins can
+                add/remove/edit products for buyers to view. Deployed on Vercel.
+              </div>
             </div>
             <div className="w-full flex gap-2 py-2 justify-center items-center">
               <SocialIcon
@@ -77,7 +81,7 @@ export default function Projects() {
               />
             </div>
           </div>
-          <div className="flex h-full flex-col rounded-xl border border-[#31BAFE]/20 overflow-hidden">
+          <div className="flex h-full flex-col rounded-xl border border-[#31BAFE]/20 overflow-hidden bg-[#31BAFE]/50">
             <div className="bg-zinc-900 flex items-center justify-center h-full w-full">
               <Image
                 src="/cloneflix.png"
@@ -86,13 +90,16 @@ export default function Projects() {
                 alt="airbnb"
               />
             </div>
-            <h3 className="text-2xl font-bold pl-2 pt-2">Cloneflix</h3>
-            <div className="p-2">
-              Application created using Next.js, MongoDB, NextAuth and Tailwind
-              CSS. Displays a variety of movie titles and tv series where users
-              can interact with to either add to their list or visit an
-              individual more descriptive page. Includes a search functionality
-              where information about a certain title can be retrieved.
+            <div className="h-96">
+              <h3 className="text-2xl font-bold pl-2 pt-2">Cloneflix</h3>
+              <div className="p-2">
+                Application created using Next.js, MongoDB, NextAuth and
+                Tailwind CSS. Displays a variety of movie titles and tv series
+                where users can interact with to either add to their list or
+                visit an individual more descriptive page. Includes a search
+                functionality where information about a certain title can be
+                retrieved.
+              </div>
             </div>
             <div className="w-full flex gap-2 py-2 justify-center items-center">
               <SocialIcon

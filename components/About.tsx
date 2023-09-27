@@ -13,7 +13,7 @@ export default function About() {
       transition={{ duration: 2 }}
       className="flex flex-col relative h-screen text-center max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-[#31BAFE] text-2x">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-[#31BAFE] text-2x ">
         About
       </h3>
 
