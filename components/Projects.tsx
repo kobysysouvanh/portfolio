@@ -27,7 +27,7 @@ export default function Projects() {
         Projects
       </h3>
       <div className="relative w-full h-full flex items-center justify-center z-[10]">
-        <div className="p-3 h-[54vh] flex items-center gap-7">
+        <div className="p-3 h-[54vh] items-center gap-7 grid grid-cols-3">
           <div className="flex h-full flex-col rounded-xl border border-[#31BAFE]/20 overflow-hidden">
             <div className="bg-white flex items-center justify-center h-full w-full">
               <Image src="/airbnb.png" width={700} height={100} alt="airbnb" />
@@ -36,7 +36,7 @@ export default function Projects() {
             <div className="p-2">{projects[0].desc}</div>
             <div className="w-full flex gap-2 py-2 justify-center items-center">
               <SocialIcon
-                url="https://github.com/kobysysouvanh"
+                url="https://github.com/kobysysouvanh/airbnb-clone"
                 fgColor="white"
                 bgColor="black"
                 target="_blank"
@@ -51,12 +51,7 @@ export default function Projects() {
           </div>
           <div className="flex h-full flex-col rounded-xl border border-[#31BAFE]/20 overflow-hidden">
             <div className="bg-white flex items-center justify-center h-full w-full">
-              <Image
-                src="/pcpalace.png"
-                width={700}
-                height={100}
-                alt="airbnb"
-              />
+              <Image src="/pcpalace.png" width={700} height={100} alt="logo" />
             </div>
             <h3 className="text-2xl font-bold pl-2 pt-2">PC Palace</h3>
             <div className="p-2">
@@ -69,7 +64,7 @@ export default function Projects() {
             </div>
             <div className="w-full flex gap-2 py-2 justify-center items-center">
               <SocialIcon
-                url="https://github.com/kobysysouvanh"
+                url="https://github.com/kobysysouvanh/pcpalace"
                 fgColor="white"
                 bgColor="black"
                 target="_blank"
@@ -79,6 +74,38 @@ export default function Projects() {
                 fgColor="white"
                 bgColor="black"
                 target="https://pcpalace.vercel.app/"
+              />
+            </div>
+          </div>
+          <div className="flex h-full flex-col rounded-xl border border-[#31BAFE]/20 overflow-hidden">
+            <div className="bg-zinc-900 flex items-center justify-center h-full w-full">
+              <Image
+                src="/cloneflix.png"
+                width={700}
+                height={100}
+                alt="airbnb"
+              />
+            </div>
+            <h3 className="text-2xl font-bold pl-2 pt-2">Cloneflix</h3>
+            <div className="p-2">
+              Application created using Next.js, MongoDB, NextAuth and Tailwind
+              CSS. Displays a variety of movie titles and tv series where users
+              can interact with to either add to their list or visit an
+              individual more descriptive page. Includes a search functionality
+              where information about a certain title can be retrieved.
+            </div>
+            <div className="w-full flex gap-2 py-2 justify-center items-center">
+              <SocialIcon
+                url="https://github.com/kobysysouvanh/cloneflix"
+                fgColor="white"
+                bgColor="black"
+                target="_blank"
+              />
+              <SocialIcon
+                url="https://cloneflix-alpha.vercel.app/"
+                fgColor="white"
+                bgColor="black"
+                target="https://cloneflix-alpha.vercel.app/"
               />
             </div>
           </div>
